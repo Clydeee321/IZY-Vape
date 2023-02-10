@@ -1,0 +1,38 @@
+<?php
+class Person {
+  private $name;
+  private $age;
+
+  public function __construct($name, $age) {
+    $this->name = $name;
+    $this->age = $age;
+  }
+
+  public function getName() {
+    return $this->name;
+  }
+
+  public function setName($name) {
+    $this->name = $name;
+  }
+
+  public function getAge() {
+    return $this->age;
+  }
+
+  public function setAge($age) {
+    $this->age = $age;
+  }
+}
+
+$person = new Person("Klajd Krasniqi", 30);
+
+echo "Name: " . $person->getName() . "<br>";
+echo "Age: " . $person->getAge() . "<br>";
+
+$person->setName("Jane Doe");
+$person->setAge(32);
+
+echo "Name: " . $person->getName() . "<br>";
+echo "Age: " . $person->getAge() . "<br>";
+?>
